@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+      Datasheet
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+
+    <h1 class="brand">
+        <i>DATASHEET</i>
+        <figure>
+          <img src="insurance.jpg" alt="Insurance">
+        </figure>
+    </h1>
+
+    <nav>
+      <a href="index.html">Main Page</a>
+      <a href="photo.html">Photo</a>
+      <a href="ageproof.html">Age Proof</a>
+      <a href="idproof.html">Address and ID Proof</a>
+      
+    </nav>
+
+    <div class="wrapper">
+
+      <div class="contact">
+        <h3>
+            <i>PLEASE UPLOAD YOUR PHOTO</i>
+        </h3>
+
+        <form id="contactForm" onsubmit="showalertfile()">
+            <div class="alert">
+                Your response has been recorded
+            </div>
+
+            <!--p class="full">
+                <label>
+                    Email Address
+                </label>
+                <input type="email" name="email" id="email">
+              </p-->
+
+            <p>
+                <label>
+                    File
+                </label>
+                <input type="file" name="photo" id="photo">
+            </p>
+
+
+            <p class="full">
+                <button type="submit" onclick="uploadImage()">Submit</button>
+            </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
