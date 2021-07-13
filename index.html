@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+      Datasheet
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+
+    <h1 class="brand">
+        <i>DATASHEET</i>
+        <figure>
+          <img src="res/insurance.jpg" alt="Insurance">
+        </figure>
+    </h1>
+
+    <nav>
+      <a href="index.html">Main Page</a>
+      <a href="photo.html">Photo</a>
+      <a href="ageproof.html">Age Proof</a>
+      <a href="idproof.html">Address and ID Proof</a>
+    </nav>
+
+    <div class="wrapper">
+      <!--div class="company-info">
+        <ul>
+            <b><i>LIFE INSURANCE CORPORATION OF INDIA</i></b>
+        </ul>
+        <ul>
+          <b><i>SALEM EAST BRANCH</i></b>
+        </ul>
+      </div-->
+
+      <div class="contact">
+        <h3>
+            PLEASE FILL THIS FORM
+        </h3>
+
+        <div class="alert">
+            Your response has been recorded
+        </div>
+
+        <form id="contactForm" onsubmit="showalert()">
+
+          <p class="full">
+            <label>
+                <br>
+                <b>PERSONAL DETAILS</b>
+            </label>
+          </p>
+
+          <p>
+            <label>
+                Name
+            </label>
+            <input type="text" name="name" id="name" required>
+          </p>
+
+          <p>
+            <label>
+                Father's Name
+            </label>
+            <input type="text" name="father" id="father">
+          </p>
+        
+          <p>
+            <label for="gender">
+                Gender (M/F)
+            </label>
+            <select name="gender" id="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Third">Third Gender</option>
+            </select>
+          </p>
+
+          <p>
+            <label>
+                Mother's Name
+            </label>
+            <input type="text" name="mother" id="mother">
+          </p>
+
+          <p>
+            <label for="marital">
+                Marital Status
+            </label>
+            <select name="marital" id="marital">
+              <option value="UnMarried">Un-Married</option>
+              <option value="Married">Married</option>
+            </select>
+          </p>
+        
+          <p>
+            <label>
+                Spouse's Name
+            </label>
+            <input type="text" name="spouse" id="spouse">
+          </p>
+
+          <p class="full">
+            <label>
+                Address Present
+            </label>
+            <textarea name="addrpre" rows="3" id="addrpre"></textarea>
+          </p>
+
+          <p class="full">
+            <label>
+                Address Permanent
+            </label>
+            <textarea name="addrper" rows="3" id="addrper"></textarea>
+          </p>
+
+          <p>
+            <label>
+                Email Address
+            </label>
+            <input type="email" name="email" id="email" required>
+          </p>
+
+          <p>
+            <label>
+                Phone Number
+            </label>
+            <input type="text" name="phone" id="phone">
+          </p>
+
+          <p>
+            <label>
+                DOB
+            </label>
+            <input type="date" name="dob" id="dob">
+          </p>
+
+          <p>
+            <label>
+                Place of Birth
+            </label>
+            <input type="text" name="birthpl" id="birthpl">
+          </p>
+
+          <p class="full">
+            <label>
+                <br>
+                <b>NOMINEE DETAILS</b>
+            <br>
+                Incase of only one Nominee, then enter the details for only one Nominee and leave the rest as blank
+            </label>
+          </p>
+
+          <p class="full">
+            <label>
+                <br>
+                <b><i>NOMINEE-1</i></b>
+            <br>
+            </label>
+          </p>
+
+          <p>
+            <label>
+                Name
+            </label>
+            <input type="text" name="nname1" id="nname1">
+          </p>
+
+          <p>
+            <label>
+                % Share
+            </label>
+            <input type="text" name="per1" id="per1">
+          </p>
+
+          <p>
+            <label>
+                Relationship
+            </label>
+            <input type="text" name="rel1" id="rel1">
+          </p>
+
+          <p>
+            <label>
+                Age
+            </label>
+            <input type="text" name="age1" id="age1">
+          </p>
+
+          <p class="full">
+
+          </p>
+
+          <p class="full">
+            <label>
+                <br>
+                <b><i>NOMINEE-2</i></b>
+            <br>
+            </label>
+          </p>
+
+          <p>
+            <label>
+                Name
+            </label>
+            <input type="text" name="nname2" id="nname2">
+          </p>
+
+          <p>
+            <label>
+                % Share
+            </label>
+            <input type="text" name="per2" id="per2">
+          </p>
+
+          <p>
+            <label>
+                Relationship
+            </label>
+            <input type="text" name="rel2" id="rel2">
+          </p>
+
+          <p>
+            <label>
+                Age
+            </label>
+            <input type="text" name="age2" id="age2">
+          </p>
+
+          <p class="full">
+            <label>
+                <br>
+                <b>BANK ACCOUNT DETAILS</b>
+            </label>
+          </p>
+
+          <p class="full">
+            <label>
+                Name and Address of Your Bank
+            </label>
+            <textarea name="bankname" rows="2" id="bankname"></textarea>
+          </p>
+
+          <p>
+            <label>
+                Account No.
+            </label>
+            <input type="text" name="accno" id="accno">
+          </p>
+
+          <p>
+            <label>
+                IFSC Code
+            </label>
+            <input type="text" name="ifsc" id="ifsc">
+          </p>
+
+          <p>
+            <label>
+                MICR Code
+            </label>
+            <input type="text" name="micr" id="micr">
+          </p>
+
+          <p>
+            <label for="acctyp">
+                Type of Account
+            </label>
+            <select name="acctyp" id="acctyp">
+              <option value="Savings">Savings</option>
+              <option value="Current">Current</option>
+            </select>
+          </p>
+
+          <p>
+            <label>
+                MICR Code
+            </label>
+            <input type="text" name="micr" id="micr">
+          </p>
+
+
+          <!--p class="full">
+            <label>
+                Message
+            </label>
+            <textarea name="message" rows="3" id="message"></textarea>
+          </p-->
+
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
