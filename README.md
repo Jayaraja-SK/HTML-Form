@@ -7,4 +7,4 @@ Languages:
   3. JS
  
 Database:
-  Firebase
+- Firebase
